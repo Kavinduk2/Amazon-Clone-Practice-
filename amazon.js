@@ -68,6 +68,7 @@ document.querySelectorAll('.js-add-to-cart')
       if(productId === item.productId){
         matchingItem = item;
       }
+
     });
 
 
@@ -87,6 +88,14 @@ document.querySelectorAll('.js-add-to-cart')
     document.querySelector('.js-cart-quantity')
       .innerHTML = cartQuantity;
     
+       // ✅ Show the "Successfully added" message
+    const message = button.parentElement.querySelector('.js-added-message');
+    message.style.display = 'block';  // make it visible
+
+    // ✅ Hide it after 1.5 seconds (1500 ms)
+    setTimeout(() => {
+      message.style.display = 'none';
+    }, 1500);
   
   });
 });
