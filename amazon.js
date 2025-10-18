@@ -46,6 +46,7 @@ products.forEach((product)=>{
             Added
           </div>
 
+          <p class="js-added-message">Successfully added</p>
           <button class="add-to-cart-button button-primary js-add-to-cart"
           data-product-id="${product.id}">
             Add to Cart
