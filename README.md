@@ -31,3 +31,17 @@ A frontend clone of the Amazon e-commerce platform. This project mimics the core
 | `checkout.html` | The shopping cart page. Displays selected items, delivery options (dates/prices), and the final order summary. |
 | `orders.html` | Displays a history of placed orders with Order IDs, dates, and total costs. |
 | `tracking.html` | A visual interface for tracking the delivery status of a specific package. |
+
+## ⚙️ How to Run
+
+1.  **Download the Code:** Ensure all HTML files and the `amazon.js` file are in the root directory.
+2.  **Verify Data Files:** Ensure you have the `data/` folder containing `cart.js` and `products.js`, as these are referenced by `amazon.html` to load the initial data.
+3.  **Verify Images:** Ensure the `images/` directory is populated with the necessary icons and product images referenced in the HTML/JS.
+4.  **Launch:** Open `amazon.html` in any modern web browser (Chrome, Firefox, Edge).
+
+## 🚧 Current Status & Future Improvements
+
+* **Dynamic Homepage:** The homepage fully utilizes JavaScript to render products.
+* **Static Checkout/Orders:** Currently, `checkout.html` and `orders.html` utilize hardcoded HTML for layout demonstration.
+    * *To-Do:* Refactor `checkout.html` to generate cart items dynamically based on the `cart` array.
+    * *To-Do:* Implement actual calculation logic for the "Order Summary" in the checkout.
